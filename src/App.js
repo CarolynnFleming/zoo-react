@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Sign from './Sign.js';
+import Parade from './Parade.js';
 
 function App() {
+  const [unicornSize, setUnicornSize] = useState(1);
+  const [dragonSize, setDragonSize] = useState(1);
+  const [openZoo, setOpenZoo] = useState(false);
+  const [animalArray, setAnimalArray] = useState(['whale', 'peacock', 'squid', 'fox']);
+
+  const unicornStyle = {
+    fontSize: `${unicornSize}rem`,
+    background: 'electric purple',
+  };
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
     </div>
   );
 }
