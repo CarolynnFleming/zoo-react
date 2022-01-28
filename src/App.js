@@ -2,7 +2,6 @@ import './App.css';
 import { useState } from 'react';
 import Sign from './Sign.js';
 import Parade from './Parade.js';
-
 function App() {
   const [unicornSize, setUnicornSize] = useState(1);
   const [dragonSize, setDragonSize] = useState(1);

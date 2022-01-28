@@ -2,13 +2,13 @@ import React from 'react';
 
 export default function Sign(props) {
   return (<div>{
-      props.openZoo
+    props.openZoo
       ? 'Zoo Is Open'
       : 'Sorry Zoo Is Closed'
-      }
-      <div>
-          {props.zooOpen && 'this only shows when props.zooOpen is truthy'}
-          {props.zooOpen && 'this only shows when props.zooOpen is falsey'}
-      </div>
+  }
+  <div>
+    {props.openZoo && 'this only shows when props.openZoo is truthy'}
+    {props.openZoo || 'this only shows when props.openZoo is falsey'}
+  </div>
   </div>);
 }
