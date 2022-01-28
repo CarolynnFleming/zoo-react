@@ -19,6 +19,21 @@ function App() {
     background: 'scarlet',
   };
 
+  function handleAddWhale() {
+    setAnimalArray([...animalArray, 'whale']);
+  }
+
+  function handleAddPeacock() {
+    setAnimalArray([...animalArray, 'peacock']);
+  }
+
+  function handleAddSquid() {
+    setAnimalArray([...animalArray, 'squid']);
+  }
+
+  function handleAddFox() {
+    setAnimalArray([...animalArray, 'fox']);
+  }
 
 
   return (
@@ -46,7 +61,7 @@ function App() {
         <Parade animalArray={animalArray} />
         <div>
           <button onClick={handleAddWhale}>Add Whale</button>
-          <button onClick={handleAddPeacpck}>Add Peacock</button>
+          <button onClick={handleAddPeacock}>Add Peacock</button>
           <button onClick={handleAddSquid}>Add Squid</button>
           <button onClick={handleAddFox}>Add Fox</button>
         </div>
