@@ -42,6 +42,15 @@ function App() {
           <button onClick={() => setOpenZoo(true)}>Open Zoo</button>
         </div>
       </section>
+      <section className='parade'>
+        <Parade animalArray={animalArray} />
+        <div>
+          <button onClick={handleAddWhale}>Add Whale</button>
+          <button onClick={handleAddPeacpck}>Add Peacock</button>
+          <button onClick={handleAddSquid}>Add Squid</button>
+          <button onClick={handleAddFox}>Add Fox</button>
+        </div>
+      </section>
      
     </div>
   );
