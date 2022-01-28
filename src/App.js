@@ -19,18 +19,27 @@ function App() {
     background: 'scarlet',
   };
 
+
+
   return (
     <div className="App">
       <section className='fight'>
         <div className='unicorn'>
           <p style={unicornStyle}>🦄</p>
-          <button onClick={() => setUnicornSize(unicornSize + 1)}></button>
-          <button onClick={() => setUnicornSize(unicornSize - 1)}></button>
+          <button onClick={() => setUnicornSize(unicornSize + 1)}>Unicorn gets Stronger</button>
+          <button onClick={() => setUnicornSize(unicornSize - 1)}>Unicorn attacks lion</button>
         </div>
         <div className='dragon'>
           <p style={dragonStyle}>🐲</p>
-          <button onClick={() => setDragonSize(dragonSize + 1)}></button>
-          <button onClick={() => setDragonSize(dragonSize - 1)}></button>
+          <button onClick={() => setDragonSize(dragonSize + 1)}>Dragon gets stronger</button>
+          <button onClick={() => setDragonSize(dragonSize - 1)}>Dragon attacks unicorn</button>
+        </div>
+      </section>
+      <section className='sign'>
+        <Sign openZoo={openZoo} />
+        <div>
+          <button onClick={() => setOpenZoo(false)}>Close Zoo</button>
+          <button onClick={() => setOpenZoo(true)}>Open Zoo</button>
         </div>
       </section>
      
