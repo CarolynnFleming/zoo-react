@@ -39,29 +39,29 @@ function App() {
       <section className='fight'>
         <div className='unicorn'>
           <p style={unicornStyle}>🦄</p>
-          <button onClick={() => setUnicornSize(unicornSize + 1)}>Unicorn gets Stronger</button>
-          <button onClick={() => setUnicornSize(unicornSize - 1)}>Unicorn attacks lion</button>
+          <button className='hot' onClick={() => setUnicornSize(unicornSize + 1)}>Unicorn gets Stronger</button>
+          <button className='hot' onClick={() => setUnicornSize(unicornSize - 1)}>Unicorn attacks lion</button>
         </div>
         <div className='dragon'>
           <p style={dragonStyle}>🐲</p>
-          <button onClick={() => setDragonSize(dragonSize + 1)}>Dragon gets stronger</button>
-          <button onClick={() => setDragonSize(dragonSize - 1)}>Dragon attacks unicorn</button>
+          <button className='hot' onClick={() => setDragonSize(dragonSize + 1)}>Dragon gets stronger</button>
+          <button className='hot' onClick={() => setDragonSize(dragonSize - 1)}>Dragon attacks unicorn</button>
         </div>
       </section>
       <section className='sign'>
         <Sign openZoo={openZoo} />
         <div>
-          <button onClick={() => setOpenZoo(false)}>Close Zoo</button>
-          <button onClick={() => setOpenZoo(true)}>Open Zoo</button>
+          <button className='hot' onClick={() => setOpenZoo(false)}>Close Zoo</button>
+          <button className='hot' onClick={() => setOpenZoo(true)}>Open Zoo</button>
         </div>
       </section>
       <section className='parade'>
         <Parade animalArray={animalArray} />
         <div>
-          <button onClick={handleAddWhale}>Add Whale</button>
-          <button onClick={handleAddPeacock}>Add Peacock</button>
-          <button onClick={handleAddSquid}>Add Squid</button>
-          <button onClick={handleAddFox}>Add Fox</button>
+          <button className='hot' onClick={handleAddWhale}>Add Whale</button>
+          <button className='hot' onClick={handleAddPeacock}>Add Peacock</button>
+          <button className='hot' onClick={handleAddSquid}>Add Squid</button>
+          <button className='hot' onClick={handleAddFox}>Add Fox</button>
         </div>
       </section>
      
