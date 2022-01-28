@@ -14,7 +14,10 @@ function App() {
     fontSize: `${unicornSize}rem`,
     background: 'electric purple',
   };
-
+  const dragonStyle = {
+    fontSize: `${dragonSize}rem`,
+    background: 'scarlet',
+  };
 
   return (
     <div className="App">
