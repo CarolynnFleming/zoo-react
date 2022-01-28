@@ -21,6 +21,18 @@ function App() {
 
   return (
     <div className="App">
+      <section className='fight'>
+        <div className='unicorn'>
+          <p style={unicornStyle}>🦄</p>
+          <button onClick={() => setUnicornSize(unicornSize + 1)}></button>
+          <button onClick={() => setUnicornSize(unicornSize - 1)}></button>
+        </div>
+        <div className='dragon'>
+          <p style={dragonStyle}>🐲</p>
+          <button onClick={() => setDragonSize(dragonSize + 1)}></button>
+          <button onClick={() => setDragonSize(dragonSize - 1)}></button>
+        </div>
+      </section>
      
     </div>
   );
