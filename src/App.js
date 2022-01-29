@@ -38,12 +38,12 @@ function App() {
     <div className="App">
       <section className='fight'>
         <div className='unicorn'>
-          <p style={unicornStyle}>🦄</p>
+          <p className='uni' style={unicornStyle}>🦄</p>
           <button className='hot' onClick={() => setUnicornSize(unicornSize + 1)}>Unicorn gets Stronger</button>
           <button className='hot' onClick={() => setUnicornSize(unicornSize - 1)}>Unicorn attacks lion</button>
         </div>
         <div className='dragon'>
-          <p style={dragonStyle}>🐲</p>
+          <p className='drag' style={dragonStyle}>🐲</p>
           <button className='hot' onClick={() => setDragonSize(dragonSize + 1)}>Dragon gets stronger</button>
           <button className='hot' onClick={() => setDragonSize(dragonSize - 1)}>Dragon attacks unicorn</button>
         </div>
